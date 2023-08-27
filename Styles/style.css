@@ -1,0 +1,110 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+}
+
+/* Tìtulo */
+
+h1 {
+    text-align: center;
+    color:rgb(41, 116, 255);
+    font-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    clear: both;
+}
+
+#first {
+    text-shadow: 4px 4px 6px rgb(75, 75, 75);
+    font-size: 360%;
+}
+
+.separador {
+    width: 90%;
+    background-color: white;
+}
+
+
+/* Primer Vista */
+
+#container_presentacion {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 35vw;
+    margin: 0 auto;
+}
+
+#presentacion {
+    padding: 20px 20px 20px 100px; 
+    height: 30vw;
+}
+
+#enlaces_presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 80%;
+    background-image: url("Images/Daco_4247144.png"); 
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#enlaces_presentacion a { 
+    width: 150px;
+    margin: 20px 30px; 
+    padding: 10px 20px;
+    color: rgb(22, 22, 22); /* Cambia el color del texto */
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 350%;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(41, 41, 41), 0 0 0.2em rgb(255, 255, 255);
+}
+
+/* Estudios */
+
+.image {
+    height: 20vw;
+    padding: 20px;
+}
+
+.title {
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Pie de página */
+
+#piepag {
+    padding: 40px 0 150px 0;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.945);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+#piepag img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+#gotop {
+    position: absolute;
+    bottom: 0;
+}
+
+#gotop img {
+    height: 60px;
+    width: 100px;
+}
