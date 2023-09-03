@@ -3,11 +3,11 @@ body {
     background-color: black;
 }
 
-/* Tìtulo */
+/* Título */
 
 h1 {
     text-align: center;
-    color:rgb(41, 116, 255);
+    color: rgb(41, 116, 255);
     font-size: 300%;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -30,7 +30,7 @@ h1 {
 
 #container_presentacion {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -39,7 +39,7 @@ h1 {
 }
 
 #presentacion {
-    padding: 20px 20px 20px 100px; 
+    padding: 20px 20px 20px 100px;
     height: 30vw;
 }
 
@@ -50,17 +50,18 @@ h1 {
     justify-content: left;
     width: 100%;
     height: 80%;
-    background-image: url("Images/Daco_4247144.png"); 
-    background-size:contain;
+    background-image: url("Images/Daco_4247144.png");
+    background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
 }
 
-#enlaces_presentacion a { 
+#enlaces_presentacion a {
     width: 150px;
-    margin: 20px 30px; 
+    margin: 20px 30px;
     padding: 10px 20px;
-    color: rgb(22, 22, 22); /* Cambia el color del texto */
+    color: rgb(22, 22, 22);
+    /* Cambia el color del texto */
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -68,11 +69,16 @@ h1 {
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(41, 41, 41), 0 0 0.2em rgb(255, 255, 255);
 }
 
+#enlaces_presentacion a:hover {
+    text-shadow: 1px 1px 2px black, 0 0 2em rgb(129, 129, 129), 0 0 0.3em rgb(255, 255, 255);
+}
+
 /* Estudios */
 
 .image {
     height: 20vw;
-    padding: 20px;
+    margin: 0px 20px 20px 20px;
+    float: left;
 }
 
 .title {
@@ -80,6 +86,74 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.container {
+    display: block;
+    margin: 40px 60px;
+}
+
+.text {
+    flex: 1;
+    margin: 0px 0px 5px 5px;
+    font-size: 115%;
+    text-align: justify;
+    color: white;
+}
+
+.linked {
+    color: white;
+}
+
+.linked:visited {
+    color: rgb(41, 116, 255);
+}
+
+/* Experiencia */
+
+.imagen {
+    text-align: center;
+}
+
+.imagen img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.tabla {
+    clear: both;
+}
+
+
+.tabla table {
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+}
+
+.tabla th,
+.table-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.tabla th {
+    font-weight: bold;
+}
+
+/* Presentaciones */
+
+.container-media {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
 
 /* Pie de página */
 
@@ -102,9 +176,52 @@ h1 {
 #gotop {
     position: absolute;
     bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+#gotop a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gotop a:hover {
+    animation: bounceUp 3s ease-in-out infinite;
+}
+
+@keyframes bounceUp {
+
+    0%,
+    20%,
+    35%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-15px);
+    }
+
+    28% {
+        transform: translateY(-10px)
+    }
+
+    40% {
+        transform: translateY(-5px);
+    }
 }
 
 #gotop img {
     height: 60px;
     width: 100px;
+}
+
+#piepag a:not(#gotop a) {
+    transition: transform 0.3s ease-in-out;
+}
+
+#piepag a:not(#gotop a):hover {
+    transform: scale(1.2);
 }
